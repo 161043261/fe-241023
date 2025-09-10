@@ -5,17 +5,7 @@
 1. 前端不创建完整路由表, 前端根据后端返回的路由权限, 动态添加路由 `router.addRoute()`,
 2. 前端创建完整路由表 [routes.ts](./src/router/routes.ts), 使用路由元信息 `meta` 指定路由权限, 并在路由守卫中校验权限
 
-## 响应式布局
-
-|     |             |                   |
-| --- | ----------- | ----------------- |
-| xs  | extra small | <768px 超小屏幕   |
-| sm  | small       | >=768px 小屏幕    |
-| md  | middle      | >=992px 中等屏幕  |
-| lg  | large       | >=1200px 大屏幕   |
-| xl  | extra large | >=1920px 超大屏幕 |
-
-## 亮点
+## list
 
 1. vue3, vue-router@4, pinia, tailwindcss, animate.css, element-plus, echarts, 高德地图
 2. 手写单例模式的事件 bus, 发布/订阅
@@ -26,24 +16,6 @@
 7. grid 网格布局, 缓存滚动位置
 8. web worker
 9. 全局 toast (使用 vue 插件, 全局 provide/inject 两种方式实现)
-
-## provide/inject
-
-### 祖先组件
-
-```ts
-const virtualListSize = ref(0)
-provide('virtual-list-size' /** key */, virtualListSize /** value */)
-```
-
-### 子孙组件
-
-```ts
-const virtualListSize = inject<Ref<number>>('virtual-list-size', ref(0) /** defaultVal */)
-
-const largeList = ref(await props.getLargeList())
-virtualListSize.value = largeList.value.length
-```
 
 ## husky
 

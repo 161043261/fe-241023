@@ -67,4 +67,4 @@ router.push({
 
 ## 自定义指令: 可拖拽窗口
 
-参考 [DraggableWindow](src/views/order/components/DraggableWindow.vue)
+参考 [draggable-window.vue](src/views/order/components/draggable-window.vue)

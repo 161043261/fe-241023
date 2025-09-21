@@ -1,5 +1,5 @@
 {
-  "name": "fe-241023",
+  "name": "@fe-241023/client",
   "version": "0.0.0",
   "private": true,
   "type": "module",
